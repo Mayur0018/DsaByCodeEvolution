@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>s
+    <script>
+      function PrimeNumber(n) {
+        if (n < 2) {
+          return false;
+        }
+        for (let i = 2; i < Math.sqrt(n); i++) {
+          if (n % i === 0) {
+            return false;
+          }
+          return false;
+        }
+      }
+      console.log(PrimeNumber(1));
+      console.log(PrimeNumber(20));
+      // console.log(60);
+      // console.log(80);
+    </script>
+  </body>
 </html>
