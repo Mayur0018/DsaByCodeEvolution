@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        
+      function searchElment() {
+        let array = [10, 20, 30, 40, 50];
+        let iteam = document.getElementById("searchEl").value;
+        let index = undefined;
+        for (let i = 0; i < array.length - 1; i++) {
+          console.warn(array[i]);
+          if (array[i] == parseInt(iteam)) {
+            index = i;
+            break;
+          }
+        }
+        console.warn(index);
+        console.warn(array.indexOf(iteam));
+        array.splice(2, 3);
+        console.warn(array);
+      }
     </script>
-</body>
+  </body>
+  <input type="text" name="" id="searchEl" placeholder="enter Value" />
+  <button onclick="searchElment()">Search Element</button>
 </html>
