@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        
+      function removeEle() {
+        let data = [30, 20, 45, 76, 20, 80];
+        let positions = document.getElementById("positions").value;
+        positions = parseInt(positions);
+        for (let i = positions; i < data.length - 1; i++) {
+          data[i] = data[i + 1];
+          data.push;
+        }
+        data.length = data.length - 1;
+        console.warn(data);
+      }
     </script>
-</body>
+  </body>
+  <input type="text" id="positions" placeholder="Enter position" />
+  <button onclick="removeEle()">Remove value</button>
 </html>
