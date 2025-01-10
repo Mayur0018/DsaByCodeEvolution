@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function fibbonachi(n){
+        const fb = [0,1];
+        for(let i=2; i<n; i++){
+            fb[i] = fb[i-1] + fb[i-2] 
+        }
+        return fb;
+    }
+    console.log(fibbonachi(10));
+    console.log(fibbonachi(15));
+    console.log(fibbonachi(14));
+    console.log(fibbonachi(12));
+    // console.log(fibbonachi(7));
+    </script> 
+</body>
+</html>
