@@ -18,7 +18,10 @@
     //   applie(data);
 
     function factorial(item){
-    console.warn(item)
+        if(item==0){
+            return 1;
+        }
+    return factorial(item-1)
     }
     let data = 5;
     console.warn(factorial(data));
