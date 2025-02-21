@@ -6,11 +6,16 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- aa function call repetly so thats called recursion -->
     <script>
-     function applie(){
-        console.log("Apple Is the Indias No 1 brand");
+     function applie(x){
+        console.warn(x)
+        if(x<10){
+            applie(x+1);
+        }
      }
-     applie();
+     let data = 0;
+     applie(data);
     </script>
-</body>
+</body> 
 </html>
