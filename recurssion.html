@@ -64,10 +64,15 @@
       // }
 
       function test(x) {
+        if (x > 0) {
+          console.log("Mayur is BEtter Then All", x)
+          test(x - 1);
+
+        }
         console.log("Mayur is BEtter Then All", x);
       }
       let data = 100;
-      test(data)
+      test(data);
     </script>
   </body>
 </html>
