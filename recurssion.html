@@ -44,21 +44,23 @@
       // }
       // demo2();
 
-      let money = 100;
-      let apple = 0;
+      let moeny = 100;
+      let buyapp = 0;
 
       function buyapple(x) {
-        console.warn(x);
+        console.log(x);
         if (x > 0) {
-          ByMoreApple(x);
-        } else {
-          console.warn("I Dont Have More Money");
+          console.log("Apple Money Is", x);
+          BuyMoreApple(x);
         }
       }
-      function ByMoreApple(x) {
-        console.warn("Buy More apple");
+      buyapple(moeny);
+
+      function BuyMoreApple(x) {
+        x = x - 10;
+        buyapple(x);
+        console.log("By More Apples", x);
       }
-      buyapple(money);
     </script>
   </body>
 </html>
