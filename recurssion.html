@@ -33,16 +33,32 @@
       //   console.log(data[i]);
       // }
 
-      function demo1() {
-        console.log("Hard Works Pay Off");
-        demo2();
+      // function demo1() {
+      //   console.log("Hard Works Pay Off");
+      //   demo2();
+      // }
+      // demo1();
+      // function demo2() {
+      //   console.log("Coding is Better Than All");
+      //   demo1();
+      // }
+      // demo2();
+
+      let money = 100;
+      let apple = 0;
+
+      function buyapple(x) {
+        console.warn(x);
+        if (x > 0) {
+          ByMoreApple(x);
+        } else {
+          console.warn("I Dont Have More Money");
+        }
       }
-      demo1();
-      function demo2() {
-        console.log("Coding is Better Than All");
-        demo1();
+      function ByMoreApple(x) {
+        console.warn("Buy More apple");
       }
-      demo2();
+      buyapple(money);
     </script>
   </body>
 </html>
